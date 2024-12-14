@@ -1,0 +1,292 @@
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Kanit", sans-serif;
+  line-height: 1.5;
+  color: #383838;
+  font-size: 1.25em;
+}
+a {
+  text-decoration: none;
+  color: #292929;
+  font-weight: bold;
+}
+
+/*main wrap*/
+.mainWrapper {
+  min-width: 100vh;
+  padding-inline: 5%;
+}
+body {
+  background-color: #f3f3f3;
+}
+/* header */
+header {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+}
+header nav {
+  height: 25%;
+  width: 100%;
+  border-bottom: 2px solid#aaaaaa;
+  padding-block: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav > * {
+  flex-basis: 100%;
+}
+nav .compLogo img {
+  height: 80px;
+}
+nav .pageNav {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+}
+nav .pageNav a {
+  padding: 14px 10px;
+}
+nav .signIn {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+nav .signIn a {
+  padding: 14px 18px;
+}
+nav .signIn i {
+  height: 24px;
+  color: #292929;
+}
+.noti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.fa-cart-shopping::after {
+  content: "2";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  position: absolute;
+  font-size: 0.5rem;
+  top: 6px;
+  right: 6px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+header nav a:hover {
+  color: #00dbb6;
+}
+header nav a:hover i {
+  color: #00dbb6;
+}
+/*main*/
+main {
+  background-color: #f3f3f3;
+  margin-top: 16px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 24px;
+}
+main > div {
+  flex-basis: 100%;
+}
+/*--item & pic sizing*/
+.googleDocs,
+.googleSlides {
+  border-radius: 36px;
+  width: 30%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+img.card {
+  width: 100%;
+  object-fit: cover;
+  min-width: 200px;
+}
+.myCart {
+  display: flex;
+  flex-direction: column;
+}
+.item1,
+.item2 {
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  margin-block: 0 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 16px 32px;
+}
+.trachCan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00dbb6;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  overflow: hidden;
+}
+.trachCan i {
+  color: #00dbb6;
+  padding: 30px;
+}
+.trachCan :hover {
+  cursor: pointer;
+  color: aliceblue;
+  background-color: #00dbb6;
+}
+.iInfo1,
+.iInfo2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 400px;
+  padding: 20px;
+}
+.iInfo1 h3,
+.iInfo2 h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.lvBar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 12px 0;
+  width: auto;
+  gap: 12px;
+}
+.lvBar span {
+  width: 16px;
+  height: 16px;
+  gap: 4px;
+  border-radius: 50%;
+  background-color: #ebebeb;
+}
+.lvBar select {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  color: #757575;
+}
+
+.iInfo1 .lvGauge1,
+.iInfo2 .lvGauge1,
+.iInfo2 .lvGauge2,
+.iInfo2 .lvGauge3 {
+  background-color: #00dbb6;
+}
+.iInfo1 p,
+.iInfo2 p {
+  font-size: 24px;
+  font-weight: 400;
+  padding-block: 24px;
+}
+/*order info*/
+.orderInfo {
+  padding: 20px 32px;
+  display: flex;
+  min-height: 450px;
+  flex-direction: column;
+  border: 1px solid #757575;
+  border-radius: 20px;
+}
+.subTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 16px;
+}
+.subTotal h2 {
+  font-weight: 400;
+  color: #6b6b6b;
+}
+.subTotal p {
+  color: #505050;
+  font-size: 32px;
+}
+.promoCode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #757575;
+  padding-block: 20px;
+}
+.promoCode i {
+  color: #00dbb6;
+}
+.promoCode input {
+  flex-grow: 1;
+  padding: 14px;
+  margin: 16px;
+  border: 1px solid #757575;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.promoCode button {
+  width: 25%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #00dbb6;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00dbb6;
+  text-transform: uppercase;
+}
+
+.checkOut h1 {
+  color: #00dbb6;
+}
+.checkOut h3 {
+  font-weight: 400;
+}
+.totalPay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 16px;
+}
+.totalPay + button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  color: #383838;
+  border: none;
+  border-radius: 20px;
+  background-color: #00dbb6;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 32px;
+}
+button:hover {
+  background-color: #00ffd5;
+  color: #f3f3f3;
+  cursor: pointer;
+}

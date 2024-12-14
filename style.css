@@ -54,6 +54,7 @@ nav .pageNav {
 }
 nav .pageNav a {
   padding: 14px 10px;
+  transition: 0.5s ease;
 }
 nav .signIn {
   text-transform: uppercase;
@@ -63,10 +64,12 @@ nav .signIn {
 }
 nav .signIn a {
   padding: 14px 18px;
+  transition: 0.5s ease;
 }
 nav .signIn i {
   height: 24px;
   color: #292929;
+  transition: 0.5s ease;
 }
 .noti {
   display: flex;
@@ -91,6 +94,7 @@ nav .signIn i {
 }
 header nav a:hover {
   color: #00dbb6;
+  transform: scale(1.02);
 }
 header nav a:hover i {
   color: #00dbb6;
@@ -150,11 +154,13 @@ img.card {
 .trachCan i {
   color: #00dbb6;
   padding: 30px;
+  transition: 0.5s ease;
 }
 .trachCan :hover {
   cursor: pointer;
   color: aliceblue;
   background-color: #00dbb6;
+  transform: scale(1.02);
 }
 .iInfo1,
 .iInfo2 {
@@ -256,6 +262,7 @@ img.card {
   font-weight: bold;
   color: #00dbb6;
   text-transform: uppercase;
+  transition: 0.5s ease;
 }
 
 .checkOut h1 {
@@ -284,9 +291,11 @@ img.card {
   font-weight: bold;
   text-transform: uppercase;
   padding: 32px;
+  transition: 0.5s ease;
 }
 button:hover {
   background-color: #00ffd5;
   color: #f3f3f3;
   cursor: pointer;
+  transform: scale(1.02);
 }
